@@ -13,11 +13,13 @@
 1. C:\Users\$env:USERNAME\netmon 디렉토리를 만듭니다.
 2. 만들어진 netmon 디렉토리에 모든 파일을 복사합니다.
 3. 01_makeEnv.ps1 스크립트를 실행합니다.
-+ 01_makeEnv.ps1 스크립트를 실행하면 설정이 아래와 같이 차례대로 구성됩니다.
-- a. PsTools 설치 & 환경변수 설정
-- b. influxDB Binary 설치
-- c. NSSM 설치
-- d. Grafana Binary 설치
-- e. InfluxDB, Grafana 프로세스 등록 & 시작 <br>
--- InfluxDB -> influxdb, Grafana -> grafana
-- f. InfluxDB에 network database 생성
+````
+01_makeEnv.ps1 스크립트를 실행하면 설정이 아래와 같이 차례대로 구성됩니다.
+a. PsTools 설치 & 환경변수 설정
+b. influxDB Binary 설치
+c. NSSM 설치
+d. Grafana Binary 설치
+e. InfluxDB, Grafana 프로세스 등록 & 시작 <br>
+   InfluxDB -> influxdb, Grafana -> grafana
+f. InfluxDB에 network database 생성
+````
