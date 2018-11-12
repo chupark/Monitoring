@@ -16,7 +16,7 @@ if ($config.azure.flag -match $true) {
     $servers = Get-Content -Raw -Path $fileCsvPath | ConvertFrom-Csv
 }
 
-## 서버 갯수만큼 반복작업
+## 서버 갯수만큼 반복작업.
 foreach ($server in $servers) {
     Start-Job -Name $server.privateip -ScriptBlock {
         Param($server, $influxURI, $requestBody)
