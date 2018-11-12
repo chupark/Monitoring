@@ -1,0 +1,19 @@
+{
+	"azure" : {
+		"flag" : true,
+		"resourceGroup" : "CWPark-VMTest",
+		"servicePort" : "22"
+	},
+	"other" : {
+		"flag" : false,
+		"serverListPath" : "serverlist.csv"
+	},
+	"interval" : 1,
+	"influxDB" : {
+		"Auth":false,
+		"id":"idHere",
+		"password":"passwordHere",
+		"url":"localhost:8086",
+		"database":"network"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"azure" : {
+		"env" : true,
+		"resourceGroup" : "CWPark-VMTest"
+	},
+	"other" : {
+		"serverListPath" : "netmon"
+	}
+}
