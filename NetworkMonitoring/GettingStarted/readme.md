@@ -13,6 +13,10 @@
 1. 모니터링 대상 서버 (Slave 서버)
 2. 모니터링 담당 서버 (Master 서버)
 3. 모든 서버의 Private IP가 같은 주소공간 내 존재
+4. PowerShell 실행정책 변경
+````
+Set-ExecutionPolicy Bypass
+````
 
 <br>
 
