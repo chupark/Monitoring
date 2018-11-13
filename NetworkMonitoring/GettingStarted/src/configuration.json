@@ -1,4 +1,5 @@
 {
+	"home" : "netmon",
 	"azure" : {
 		"flag" : true,
 		"resourceGroup" : "CWPark-VMTest",
