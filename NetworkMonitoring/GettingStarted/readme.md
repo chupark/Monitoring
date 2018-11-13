@@ -6,7 +6,7 @@
 
 ## 1. All in One 구성도
 
-<img src=https://github.com/chupark/Monitoring/blob/master/Images/gettingStarted/01_drawing.png" />
+<img src=https://github.com/chupark/Monitoring/blob/master/Images/gettingStarted/01_drawing.png />
 
 <br>
 
