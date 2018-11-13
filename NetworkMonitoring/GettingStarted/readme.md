@@ -28,7 +28,18 @@
       InfluxDB -> influxdb, Grafana -> grafana
    - InfluxDB에 network database 생성
 
-4. 02_launchNetworkMonitoring.ps1 스크립트를 실행합니다.
+4. PowerShell 세션을 새로 열어 02_launchNetworkMonitoring.ps1 스크립트를 실행합니다.
 
 <br>
 
+## 4. Grafana 데이터 소스 연결
+
+이미지 src
+
+<br>
+
+## 5. 쿼리 작성
+
+이미지 src
+
+<br>
