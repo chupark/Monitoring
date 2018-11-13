@@ -1,4 +1,7 @@
 ﻿[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+## Install AzureRm Module
+Install-Module -Name AzureRM -AllowClobber
+
 ## Download PsTools
 $pspingOut =  "C:\Users\$env:UserName\Downloads\PSTools.zip"
 ## PsPing 압축 해제 경로
