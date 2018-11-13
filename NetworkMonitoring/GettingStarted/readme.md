@@ -12,6 +12,8 @@
 ## 2. 요구사항
 1. 모니터링 대상 서버 (Slave 서버)
 2. 모니터링 담당 서버 (Master 서버)
+3. 모든 서버의 Private IP가 같은 주소공간 내 존재
+
 <br>
 
 ## 3. 구성 방법
@@ -34,12 +36,41 @@
 
 ## 4. Grafana 데이터 소스 연결
 
-이미지 src
+http://localhost:3000 에 접속하여 로그인을 합니다. <br>
+Grafana 최초 로그인 계정 
+
+<table>
+   <tr>
+      <td>ID</td><td>admin</td>
+   </tr>
+   <tr>
+      <td>PW</td><td>admin</td>
+   </tr>
+</table>
+
+<img src=https://github.com/chupark/Monitoring/blob/master/Images/gettingStarted/02_influxdb.png />
 
 <br>
 
 ## 5. 쿼리 작성
 
-이미지 src
+<img src=https://github.com/chupark/Monitoring/blob/master/Images/gettingStarted/03_query.png />
+
+Alias By 절을 아래와 같이 작성합니다.<br>
+Host: [[tag_destination_ip]] : [[tag_destination_port]] <br>
+
+<br>
+
+## 6. 기타 설정
+
+데이터의 정보를 더 추가합니다.
+
+<img src=https://github.com/chupark/Monitoring/blob/master/Images/gettingStarted/05_etc.png />
+
+<br>
+
+## 7. 그래프 확인
+
+<img src=https://github.com/chupark/Monitoring/blob/master/Images/gettingStarted/06_graph.png />
 
 <br>
