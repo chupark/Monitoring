@@ -1,4 +1,4 @@
-﻿## Azure 특정 리소스 그룹의 VM 네트워크 정보를 읽어오는 스크립트 
+﻿## Azure 특정 리소스 그룹의 VM 네트워크 정보를 읽어오는 스크립트
 $config = Get-Content -Raw -Path "~\netmon\configuration.json" | ConvertFrom-Json;
 $modulePath = "~\" + $config.home + "\99_get_azure_vm_infomation.ps1";
 Import-Module $modulePath;
