@@ -1,4 +1,15 @@
 ﻿[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+## Download PsTools
+$pspingOut =  "C:\Users\$env:UserName\Downloads\PSTools.zip"
+## PsPing 압축 해제 경로
+$pspingUnZip = "C:\PSTools"
+Invoke-WebRequest -Uri "https://download.sysinternals.com/files/PSTools.zip" -OutFile $pspingOut
+Expand-Archive "$pspingOut" -DestinationPath $pspingUnZip 
+$pscmd = "$pspingUnZip\psping.exe -accepteula | Out-Null"
+Invoke-Expression -Command $pscmd 
+## PsPing 환경변수 설정
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\PSTools", "Machine")
+
 ## Download InfluxDB
 $influxdbLocation = "C:\Users\$env:USERNAME\Downloads\influxdb-1.7.0_windows_amd64.zip"
 Invoke-WebRequest https://dl.influxdata.com/influxdb/releases/influxdb-1.7.0_windows_amd64.zip -OutFile $influxdbLocation
