@@ -5,7 +5,8 @@
 <br>
 
 ## 1. All in One 구성도
-이미지 src
+
+<img src=https://github.com/chupark/Monitoring/blob/master/Images/gettingStarted/01_drawing.png" />
 
 <br>
 
