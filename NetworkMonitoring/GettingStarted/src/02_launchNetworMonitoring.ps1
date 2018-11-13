@@ -1,13 +1,13 @@
 ﻿## Azure 특정 리소스 그룹의 VM 네트워크 정보를 읽어오는 스크립트 
-$config = Get-Content -Raw -Path "C:\Users\$env:USERNAME\netmon\configuration.json" | ConvertFrom-Json;
-$modulePath = "C:\Users\$env:USERNAME\" + $config.home + "\99_get_azure_vm_infomation.ps1";
+$config = Get-Content -Raw -Path "~\netmon\configuration.json" | ConvertFrom-Json;
+$modulePath = "~\" + $config.home + "\99_get_azure_vm_infomation.ps1";
 Import-Module $modulePath;
 $servers = "";
 $interval = $config.interval;
 $requestBody = "";
 $influxURI = "http://" + $config.influxDB.url + "/write?db=" + $config.influxDB.database;
-$azServerPath = "C:\Users\$env:USERNAME" + "/" + $config.home +"/" + "azserverlist.csv"
-$fileCsvPath = "C:\Users\$env:USERNAME" + "/" + $config.home +"/" + $config.other.serverListPath
+$azServerPath = "~\azserverlist.csv"
+$fileCsvPath = "~\" + $config.other.serverListPath
 
 ## config 파일의 서버 정보들을 AzureVM 으로 할것인지.. 아닌지
 if ($config.azure.flag -match $true) {
